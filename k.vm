@@ -3,6 +3,6 @@ $ex.waitFor()
 #set($out=$ex.getInputStream())
 #foreach($i in [1..$out.available()])
     #set($tmp=$str.valueOf($chr.toChars($out.read())))
-    #set($result="$result$tmp")
+    #set($result=$result$tmp)
 $result
 #end
